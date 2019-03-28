@@ -1,0 +1,75 @@
+<div id="dataClass" class="checkout"></div>
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="w3_agile_header">
+						<div class="w3_agileits_logo">
+								<h1><a href="/">Pizzamond <span><i class="fa fa-cutlery" aria-hidden="true"></i>spicy food</span></a></h1>
+							</div>
+							<div class="w3_menu">
+							<div class="agileits_w3layouts_banner_info">
+				<div class="w3_agile_phone">
+			</div>
+
+							</div>
+
+							<div class="w3_menu">
+								<nav class="mobile-menu">
+									<ul>
+										<li><a href="/" class="active scroll" >Home</a></li>
+										<li><a href="/#ourmenu" class="scroll" >Our menu</a></li>
+										<li><a href="/cart/items" class="" >Checkout</a></li>
+										<li><a href="#" class="" id="logoutButton">Logout</a></li>
+									</ul>
+								</nav>
+						</div>
+						</div>
+
+
+					<div class="clearfix"></div>
+			    </div>
+
+			<div class="w3l_banner_info psjda row" style="margin-top: 80px; margin-bottom: 80px;">
+
+					<div class="col-md-6 banner-right-agile  spdtrt">
+							<div class="banner-text">
+                <h1>Cart</h1>
+                <table id="cartTable" class="table">
+                  <tr>
+                    <th>Pizza Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Remove</th>
+                  </tr>
+                </table>
+                <div id="cartContainer"></div>
+                <form action="/api/checkout" class="checkoutForm" method="POST">
+                  <div class="inputWrapper">
+                    <div class="inputLabel">Credit Card Number</div>
+                    <input type="text" id="ccNumber" placeholder="4242424242424242" />
+                  </div>
+                  <div class="inputWrapper">
+                    <div class="inputLabel">Credit Card Type</div>
+                    <select id="cardType">
+                      <option value="tok_visa">Visa</option>
+                      <option value="tok_visa_debit">Visa (debit)</option>
+                      <option value="tok_mastercard">Mastercard</option>
+                      <option value="tok_mastercard_debit">Mastercard (debit)</option>
+                      <option value="tok_mastercard_prepaid">Mastercard (prepaid)</option>
+                      <option value="tok_amex">American Express</option>
+                      <option value="tok_discover">Discover</option>
+                      <option value="tok_diners">Diners Club</option>
+                      <option value="tok_jcb">JCB</option>
+                      <option value="tok_unionpay">UnionPay</option>
+                    </select>
+                  </div>
+                  <div class="inputWrapper ctaWrapper">
+                    <button id="ccSubmit" type="button" class="cta green">Checkout</button>
+                  </div>
+                </form>
+							</div>
+					</div>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
